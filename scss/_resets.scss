@@ -1,0 +1,82 @@
+
+@use './custom' as c;
+
+
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+/* set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow-x: hidden;
+    background-position: bottom 40% center;
+    background-size: cover;
+    background-color: hsl(c.$dark-color);
+    color: hsl(c.$white);
+}
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-weight: 400;
+}
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Hide hidden elements */
+[hidden] {
+    display: none;
+}

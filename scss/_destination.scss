@@ -1,0 +1,87 @@
+@use './custom' as c;
+
+.destination {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    @media (min-width:35rem) {
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+    }
+    @media (min-width:45rem) {
+        background-image: url(../assets/destination/background-destination-desktop.jpg);
+    }
+}
+.grid-container.destination-content{
+    --gap: 2rem;
+    grid-template-areas: 
+        'title'
+        'image'
+        'tab'
+        'content'
+    ;
+
+    .numbered-title{
+        grid-area: title;
+    }
+    .destination-image{
+        max-width: 60%;
+        grid-area: image;
+        align-self: start;
+        & img{
+            max-width: 100%;
+        }
+    }
+
+    .tab{
+        grid-area: tab;
+    }
+
+    .destination-info{
+        grid-area: content;
+        gap: 1rem;
+    }
+
+    .about{
+        flex-direction: column;
+        --gap: 1rem;
+        border-top: 1px solid adjust-color(hsl(c.$white), $alpha:-.9);
+        padding-top: 2.5rem;
+        margin-top: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        
+        & p{
+            font-size: 1.75rem;
+        }
+    }
+
+    @media (min-width:35rem) {
+        .about{
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+        .numbered-title{
+            justify-self: start;
+        }
+    }
+    
+    @media (min-width:45rem) { 
+        --gap:3rem;
+        justify-items: start;
+        align-content: start;
+        grid-template-areas: 
+        '. title title .'
+        '. image tab .'
+        '. image content .';
+        .destination-image{
+            max-width: 100%;
+        }
+        .about{
+            --gap:4rem;
+            justify-content: start;
+        }
+    }
+    
+}
+
+
+
+

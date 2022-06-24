@@ -1,0 +1,73 @@
+.crew{
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    @media (min-width:35rem) {
+        background-image: url(../assets/crew/background-crew-tablet.jpg);
+    }
+    @media (min-width:45rem) {
+        background-image: url(../assets/crew/background-crew-desktop.jpg);
+    }
+}
+
+.crew-content{
+    --gap:2rem;
+    grid-template-areas: 
+        'title'
+        'image'
+        'buttons'
+        'info';
+
+    .crew-title{
+        grid-area: title;
+    }
+    .crew-image{
+        grid-area: image;
+        max-width: 60%;
+        align-self: start;
+        & img{
+            max-width: 100%;
+        }
+    }
+    .dot-indicators{
+        --gap:1.5rem;
+        grid-area: buttons;
+    }
+    .crew-info{
+        grid-area: info;
+        flex-direction: column;
+    }
+
+    @media (min-width: 35rem) {
+        padding-block-end: 0;
+        grid-template-areas: 
+        'title'
+        'info'
+        'buttons'
+        'image'
+        ;
+        .crew-title{
+            justify-self: start;
+        }
+        .crew-image{
+            align-self: end;
+        }
+        .dot-indicators > *{
+            width: .75rem;
+        }
+    }
+    @media (min-width: 45rem) {
+        grid-template-areas: 
+        '. title title .'
+        '. . image .'
+        '. info image .'
+        '. buttons image .'
+        '. . image .'
+        ;
+        .crew-image{
+            max-width: 90%;
+        }
+        .dot-indicators{
+            padding-top: 3rem;
+            justify-self: start;
+        }
+    }
+}
