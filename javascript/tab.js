@@ -7,7 +7,7 @@ tabList.addEventListener("keydown", (e) => {
 });
 
 tabs.forEach((tab) => {
-	tab.addEventListener("click", (e) => {
+	tab.addEventListener("click", () => {
 		showArticle(tab);
 	});
 });

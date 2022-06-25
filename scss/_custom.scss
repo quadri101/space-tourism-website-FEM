@@ -27,7 +27,6 @@ $font-sizes-lg: (
     "fs-400": 1.25rem,
     "fs-500": 1.75rem,
     "fs-600": 2rem,
-    "fs-700": 3.5rem,
     "fs-800": 6.25rem,
 );
 
@@ -120,11 +119,10 @@ $font-families: (
 }
 
 .grid-container {
-    --gap:4rem;
+    --gap:2rem;
     display: grid;
     gap: var(--gap, 1rem);
     text-align: center;
-    display: grid;
     padding:2rem 1.5rem 5rem;
     place-items: center;
     & *{
@@ -188,6 +186,7 @@ $font-families: (
 }
 
 .numbered-circles{
+    grid-auto-flow: column;
     &>*{
         place-items:center ;
         width: 3rem;
@@ -197,9 +196,9 @@ $font-families: (
         border-radius: 50%;
         cursor: pointer;
     }
-    &>*.active{
+    &>[aria-selected="true"]{
         color: hsl($dark-color);
-        background-color: hsl($light-color);
+        background-color: hsl($white);
     }
     & >*:not([class*="active"]):hover {
         border:  1px solid hsl($white);
@@ -310,4 +309,8 @@ $font-families: (
 }
 .uppercase{
     text-transform: uppercase;
+}
+
+.nav-item a{
+    padding-block: 1.5rem;
 }
