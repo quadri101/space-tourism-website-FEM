@@ -133,7 +133,7 @@ if (visibility === "false") {
 
 ### Continued development
 
-**I want to learn the reactjs library and probably do a lot of projects. Hit me up if you want to collabx
+**I want to learn the reactjs library and probably do a lot of projects. Hit me up if you want to collab
 
 ### Useful resources
 
