@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/master-shifu0/space-tourism-website-FEM)
-- Live Site URL: [Add live site URL here](https://master-shifu0.github.io/space-tourism-website-FEM/index.html)
+- Solution URL: [Add solution URL here](https://github.com/quadri101/space-tourism-website-FEM)
+- Live Site URL: [Add live site URL here](https://quadri101.github.io/space-tourism-website-FEM/index.html)
 
 ## My process
 
@@ -143,7 +143,7 @@ and to add support for browsers that do not support this effect
 ## Author
 
 - Frontend Mentor - [@mastershifu-0](https://www.frontendmentor.io/profile/mastershifu-0)
-- Twitter - [@tolahni](https://www.twitter.com/quadri_101)
+- Twitter - [@quadri101](https://www.twitter.com/quadri_101)
 
 ## Acknowledgments
 
