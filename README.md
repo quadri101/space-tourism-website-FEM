@@ -143,7 +143,7 @@ and to add support for browsers that do not support this effect
 ## Author
 
 - Frontend Mentor - [@mastershifu-0](https://www.frontendmentor.io/profile/mastershifu-0)
-- Twitter - [@tolahni](https://www.twitter.com/tolahni)
+- Twitter - [@tolahni](https://www.twitter.com/quadri_101)
 
 ## Acknowledgments
 
